@@ -41,8 +41,8 @@ function greaterThan (firstNum, secondNum){
     return ('false');
   }
 }
-greaterThan (2,1);
-console.assert(greaterThan(2,1)===false, 'first number is greater than second');
+greaterThan (1,2);
+console.assert(greaterThan (1,2)==='true', 'second number is greater than first');
 
 
 // Q5
@@ -71,4 +71,4 @@ function madlib (noun, adverb, verb, adjective, noun2){
     return ("The " + noun +' ' + adverb + ' ' + verb + ' ' + 'in the ' + adjective + ' ' + noun2 +'.');
 }
 madlib('bear', 'quickly', 'runs', 'green', 'house');
-console.assert(('bear', 'quickly', 'runs', 'green', 'house')==='The bear quickly runs in the green house', 'bears will be bears');
+console.assert(madlib('bear', 'quickly', 'runs', 'green', 'house')==="The bear quickly runs in the green house.", 'bears will be bears');
